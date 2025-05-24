@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html lang="en">  
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>TechDailyNewsOnline</title>  
+    <link rel="stylesheet" href="assets/css/styles.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+</head>  
+
+<body>  
+
+<header>  
+    <div class="logo">  
+        <img src="assets/images/logo.png" alt="TechDailyNewsOnline Logo">  
+    </div>  
+
+    <div class="search-container">  
+        <input type="text" autocomplete="off" placeholder="Search news..." id="search">  
+        <button id="search-btn"><i class="fas fa-search"></i></button>  
+    </div>  
+
+    <button id="dark-mode-toggle">  
+        <i class="fas fa-moon"></i>  
+    </button>  
+
+    <div class="menu-container">  
+        <button class="hamburger" id="menu-toggle">  
+            <i class="fas fa-bars"></i>   
+        </button>  
+        <nav id="nav-menu">  
+            <ul>  
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>  
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>  
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>  
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>  
+            </ul>  
+        </nav>  
+    </div>  
+</header>  
+
+<main>  
+    <section class="hero">  
+        <img src="assets/images/thumbnail.jpg" alt="TechDailyNewsOnline Thumbnail">  
+        <h1>Welcome to TechDailyNewsOnline</h1>  
+        <p>Your daily source for the latest technology updates and insights.</p>  
+    </section>  
+
+    <div class="filter-container">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+        </select>
+    </div>
+
+    <section class="latest-news">  
+        <h2>Latest Tech News</h2>
+        <div id="news-container"></div>  
+    </section>  
+</main>  
+
+<footer>  
+    <p>&copy; 2025 TechDailyNewsOnline. All rights reserved.</p>  
+</footer>  
+
+<script src="assets/js/script.js"></script>
+
+</body>  
+</html>

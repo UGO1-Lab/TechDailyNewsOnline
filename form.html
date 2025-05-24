@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add News - TechDailyNewsOnline</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">  
+            <img src="assets/images/logo.png" alt="TechDailyNewsOnline Logo">  
+        </div>  
+    
+        <div class="search-container">  
+            <input type="text" autocomplete="off" placeholder="Search news..." id="search">  
+            <button id="search-btn"><i class="fas fa-search"></i></button>  
+        </div>  
+    
+        <button id="dark-mode-toggle">  
+            <i class="fas fa-moon"></i>  
+        </button>  
+    
+        <div class="menu-container">  
+            <button class="hamburger" id="menu-toggle">  
+                <i class="fas fa-bars"></i>   
+            </button>  
+            <nav id="nav-menu">  
+                <ul>  
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>  
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>  
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>  
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>  
+                </ul>  
+            </nav>  
+        </div>  
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <h2>Add New News</h2>
+            <form action="#" method="POST">
+                <label for="category">Category</label>
+                <input type="text" id="category" name="category" placeholder="Enter news category (e.g., Politics, Technology)" required>
+                
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter news title" required>
+                
+                <label for="excerpt">Excerpt</label>
+                <textarea id="excerpt" name="excerpt" placeholder="Enter a brief news excerpt" required></textarea>
+                
+                <label for="image-url">Image URL</label>
+                <input type="url" id="image-url" name="image-url" placeholder="Enter image URL">
+                
+                <button type="submit">Add News</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 TechDailyNewsOnline. All rights reserved.</p>
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+
+
+<script>
+document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const title = document.getElementById("title").value;
+    const category = document.getElementById("category").value;
+    const description = document.getElementById("excerpt").value;
+    const image = document.getElementById("image-url").value || "assets/images/default.jpg";
+
+    const newsItem = {
+        id: Date.now(), // unique ID
+        title,
+        category,
+        description,
+        image
+    };
+
+    const existingNews = JSON.parse(localStorage.getItem("newsArticles")) || [];
+    existingNews.push(newsItem);
+    localStorage.setItem("newsArticles", JSON.stringify(existingNews));
+
+    alert("News article added!");
+    document.querySelector("form").reset();
+});
+</script>
+
+
+
+
+</body>
+</html>

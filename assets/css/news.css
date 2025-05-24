@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100px;
+}
+
+main {
+  flex: 1 0 auto; /* Ensures main expands properly */
+  margin-top: 120px; /* Fix overlapping */
+  padding: 20px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  bottom: 0;
+  width: 100%; /* Pushes it to the bottom */
+}
+
+#news-article {
+  max-width: 800px;
+  margin-top: 100px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.news-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+#related-news {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#related-news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.related-news article {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.related-news a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+}
+
+.related-news a:hover {
+  color: #007bff;
+}
+
+#back-button {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#back-button:hover {
+  background: #0056b3;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #777;
+  color: #f4f4f4;
+}
+
+.dark-mode .news-content,
+.dark-mode .related-news article {
+  background: #333;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    margin-top: 90px;
+    padding: 15px;
+  }
+
+  .news-content {
+    padding: 15px;
+  }
+
+  #related-news {
+    padding: 0 15px;
+  }
+  

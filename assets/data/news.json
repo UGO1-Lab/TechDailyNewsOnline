@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "AI Breakthrough in 2025",
+      "description": "A new AI model has been developed, changing the tech landscape.",
+      "image": "assets/images/ai.jpg",
+      "link": "news.html?id=1",
+      "category": "AI"
+    },
+    {
+      "id": 2,
+      "title": "Quantum Computing Advancements",
+      "description": "Quantum computers are now 10x faster than before.",
+      "image": "assets/images/quantum.jpg",
+      "link": "news.html?id=2",
+      "category": "Quantum Computing"
+    },
+    {
+      "id": 3,
+      "title": "Cybersecurity Alert: New Threats",
+      "description": "Experts warn of rising cyber threats targeting businesses and individuals.",
+      "image": "assets/images/cybersecurity.jpg",
+      "link": "news.html?id=3",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": 4,
+      "title": "SpaceX's Next Mars Mission",
+      "description": "Elon Musk reveals ambitious plans for colonizing Mars by 2030.",
+      "image": "assets/images/spacex.jpg",
+      "link": "news.html?id=4",
+      "category": "Space Exploration"
+    },
+    {
+      "id": 5,
+      "title": "5G Networks Expanding Globally",
+      "description": "5G technology is being deployed worldwide, promising faster internet speeds.",
+      "image": "assets/images/5g.jpg",
+      "link": "news.html?id=5",
+      "category": "Telecommunications"
+    },
+    {
+      "id": 6,
+      "title": "AI in Healthcare",
+      "description": "AI is revolutionizing the healthcare industry, improving diagnostics.",
+      "image": "assets/images/ai_health.jpg",
+      "link": "news.html?id=6",
+      "category": "AI"
+    }
+  ]
+}

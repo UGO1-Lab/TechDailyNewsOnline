@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article</title>
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <script defer src="assets/js/news.js"></script>
+    <script defer src="assets/js/script.js"></script> <!-- Main script for menu and dark mode -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="TechDailyNewsOnline Logo">
+            </a>
+        </div>
+
+        <div class="search-container">
+            <input type="text" autocomplete="off" placeholder="Search news..." id="search">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <button id="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <div class="menu-container">
+            <button class="hamburger" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="news.html"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="news-article">
+        <!-- Article content will be inserted dynamically -->
+    </main>
+
+    <section id="related-news">
+        <h2>Related News</h2>
+        <div id="related-news-container"></div>
+    </section>
+
+    <button id="back-button" onclick="goBack()">⬅ Back</button>
+
+    <footer>
+        <p>&copy; 2025 TechDailyNewsOnline. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
